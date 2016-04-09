@@ -21,24 +21,25 @@ function colourIn() { //When the mouse enters a .cell it adds 10% opacity and ch
     });
 };
 
+function cc(n) {
+    $("#currentColourDiv").css("background-color",n);
+    $(".cell").css("background-color",n);
+};
+
 function changeColour() { //Changes colour depending on selected button
     $("#blackButton").click(function() {
-        $("#currentColourDiv").css("background-color","black");
-        $(".cell").css("background-color","rgb(0,0,0)");
+        cc("rgb(0,0,0)");
     });
     $("#blueButton").click(function() {
-        $("#currentColourDiv").css("background-color","blue");
-        $(".cell").css("background-color","rgb(0,0,255)");
+        cc("rgb(0,0,255)");
     });
     $("#redButton").click(function() {
-        $("#currentColourDiv").css("background-color","red");
-        $(".cell").css("background-color","rgb(255,0,0)");
+        cc("rgb(255,0,0)");
     });
     $("#greenButton").click(function() {
-        $("#currentColourDiv").css("background-color","green");
-        $(".cell").css("background-color","rgb(0,128,0)");
+        cc("rgb(0,128,0)");
     });
-}
+};
 
 function resize() { //Asks user for a new 'resolution' for the box from 1 to 100, any other number/characters return an alert
     $("#newGridButton").click(function() {
