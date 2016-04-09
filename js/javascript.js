@@ -48,6 +48,7 @@ function resize() { //Asks user for a new 'resolution' for the box from 1 to 100
             $("#grid").empty();
             createGrid(gridSize);
             colourIn();
+            cc("rgb(0,0,0)");
         };
     });
 };
