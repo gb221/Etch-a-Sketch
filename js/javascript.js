@@ -13,11 +13,8 @@ function createGrid(n) { //Creates an nxn grid on the page
 
 function colourIn() { //When the mouse enters a .cell it adds 10% opacity and changes .cell to .cellColoured
     $(".cell").mouseenter(function() {
-        var currentOpactity=parseFloat($(this).css("opacity"));
-        var newOpacity=currentOpactity+0.1;
-        $(this).css("opacity", newOpacity);
-        $(this).removeClass("cell");
-        $(this).addClass("cellColoured");
+        $(this).css("opacity", "+=0.1");
+        $(this).removeClass("cell").addClass("cellColoured");
     });
 };
 
