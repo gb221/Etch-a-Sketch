@@ -4,23 +4,30 @@
     <title>The Odin Project Etch-a-Sketch</title>
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
-    <script src="js/sketchpad.js"></script>
+    <script src="js/javascript.js"></script>
 </head>
 <body>
     <div id="header">
         <h1>The Odin Project Etch-a-Sketch</h1>
-        <h3>Drag your mouse over the grid to colour in the squares</h3>
+        <h3>Move your mouse over the box to colour it in</h3>
+    </div>
+    <div id="wrapper">
         <div id="options">
-            <div>
-                    <button name="gridSize" id="gridSizeButton">Change Grid Size</button>
-            </div>
-            <div>
-                <button name="clear" id="clearButton">Clear Grid</button>
+            <button id="newGridButton">Increase Resolution</button>
+            <button id="clearGridButton">Clear Grid</button>
+            <button id="blackButton">Black</button>
+            <button id="blueButton">Blue</button>
+            <button id="redButton">Red</button>
+            <button id="greenButton">Green</button>
+            <div id="currentColour">
+                <p>
+                    Current Colour: <div id="currentColourDiv"></div>
+                </p>
             </div>
         </div>
-    </div>
-    <div id="container">
-        <table id="grid"></table>
+        <div id="container">
+            <table id="grid"></table>
+        </div>
     </div>
 </body>
 </html>

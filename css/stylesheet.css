@@ -1,29 +1,68 @@
+body {
+    font-family: Helvetica;
+}
+
 #header {
-    font-family: Helvetica;
-    text-align: center;
-}
-#container {
-    font-family: Helvetica;
-    margin: 10px 0px auto;
-    text-align: center;
-}
-#grid {
     margin: auto;
-    clear: right;
-    position: relative;
+    text-align: center;
 }
-.gridBlock {
+
+#wrapper {
+    text-align: center;
+}
+
+#options {
     display: inline-block;
-    margin-left: 1px;
+}
+
+button {
+    padding: 5px 5px 5px 5px;
+    font-family: Helvetica;
+}
+
+#blackButton {
+    margin-left: 20px;
+}
+
+#currentColour {
+    width: auto;
+    margin-top: 25px;
+}
+
+#currentColour p {
+    width: 150px;
+    display: inline;
+    vertical-align: middle;
+}
+
+#currentColourDiv {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: solid black 1px;
+    margin: 10px auto;
+    top: 250px;
+}
+
+#container {
+    width: 600px;
+    height: 600px;
+    margin: 10px auto;
     border: solid black 1px;
 }
-button {
-    padding: 5px 10px 5px 10px;
-    margin-top: 20px;
-    position: relative;
+
+#grid {
+    width: 600px;
+    height: 600px;
+    border-spacing: 0px;
 }
-#options div {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
+
+.cell {
+    background-color: black;
+    opacity: 0;
+}
+
+.cellColoured {
+    background-color: black;
+    opacity: 0;
 }
