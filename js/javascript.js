@@ -57,16 +57,13 @@ function resize() { //Asks user for a new 'resolution' for the box from 1 to 100
 
 function clearGrid () { //Clears grid but keeps current 'resolution' and background colour
     $("#clearGridButton").click(function() {
-        $(".cellColoured").removeClass("cellColoured");
-        $("td").addClass("cell");
+        $(".cellColoured").removeClass("cellColoured").addClass("cell");
         $(".cell").css("opacity","0");
-        $(".cellColoured").css("opacity","0");
-        $(".cell").css("background-color","rgb(0,0,0)");
-        $("#currentColourDiv").css("background-color","rgb(0,0,0)");
+        cc("rgb(0,0,0)")
     });
 };
 
-$(document).ready(function() { //Loads default grid of 30x30
+$(document).ready(function() { //Loads everything with a default grid of 30x30
     createGrid(30);
     clearGrid();
     resize();
