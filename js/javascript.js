@@ -67,7 +67,6 @@ function clearGrid () {
         cc(0,0,0)
     });
 };
-
 //Loads everything with a default grid of 30x30
 $(document).ready(function() {
     createGrid(30);
